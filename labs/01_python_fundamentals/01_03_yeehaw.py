@@ -6,3 +6,5 @@ Write the necessary code to display the follow message to the console
 	Coding here I come!
 
 '''
+
+print("I'm a programer now.\nYeehaw!\nCoding here I come!")
