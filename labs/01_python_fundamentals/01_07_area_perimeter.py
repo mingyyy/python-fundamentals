@@ -5,4 +5,4 @@ Write the necessary code to display the area and perimeter of a rectangle that h
 '''
 area = 2.4 * 6.4
 perimeter = (2.4 + 6.4) * 2
-print 'The area of the rectangle is %d, perimeter is %d' % (area, perimeter)
+print('The area of the rectangle is %s and the perimeter is %s.' % (area, perimeter))
