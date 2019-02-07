@@ -2,7 +2,7 @@
 
 Write a script that takes in a number in days from the user between 1 and 1,000,000,000 and convert it to seconds.
 
-NOTE: We will use the input() funtion to collect users input. An example is demonstrated below.
+NOTE: We will use the input() function to collect users input. An example is demonstrated below.
 
 '''
 
@@ -11,3 +11,9 @@ NOTE: We will use the input() funtion to collect users input. An example is demo
 # The string passed to the input() function is what the user is prompted with
 days = int(input("Please enter a number in days between 1 and 1,000,000,000: "))
 
+# convert it to seconds
+s = days * 24 * 60 * 60
+if s ==1: # singular agreement
+    print(f"There are {s} seconds in {days} day.")
+else:
+    print(f"There are {s} seconds in {days} days.")
