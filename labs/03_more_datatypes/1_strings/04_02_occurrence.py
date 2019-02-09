@@ -7,3 +7,21 @@ Letter input:
 Result: 4
 
 '''
+# take string
+str = input("Input a string please:")
+
+# take letter
+l = input("Input a letter please:")
+
+i = 0 # counter
+for x in str:
+    i += 1
+    if x == l:
+        print(i)
+        break
+
+if i == len(str):
+    print("The letter is not in the string.")
+
+
+
