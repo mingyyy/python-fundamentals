@@ -9,9 +9,8 @@ str = input("Please enter a string:")
 n = 0 # counter
 
 for i in str.upper():
-    for j in v:
-        if i == j:
-            n += 1
+    if i in v:
+        n += 1
 if n == 1:
     print(f"If excluding Y from vowels, there is one vowel used in the string. ")
 else:
@@ -37,10 +36,7 @@ if n == 0:
     if n == 1:
         print(f"If counting Y as a vowel, there is one vowel used in the string.")
     else:
-        print("If counting Y as a vowel, there are {n} times of vowels used in the string.")
-
-
-
+        print(f"If counting Y as a vowel, there are {n} times of vowels used in the string.")
 
 
 

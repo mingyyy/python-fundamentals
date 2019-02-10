@@ -7,15 +7,20 @@ Symbol input: #
 Result: #ore python progra##ing please
 
 '''
+
+import re
+
 # take string
-str = input("Input a string please:")
+sentence = input("Input a string please: ")
 
 # take symbol
-sym = input("Input a symbol please:")
+sym = input("Input a symbol please: ")
 # first letter of the string
-fl = str[:1]
-print(str.replace(fl, sym))
+fl = sentence[0]
 
+fl_re = re.compile(fl, re.IGNORECASE) # turn off case-sensitive
+sentence_re = fl_re.sub(sym, sentence)
+print(sentence_re)
 
 
 

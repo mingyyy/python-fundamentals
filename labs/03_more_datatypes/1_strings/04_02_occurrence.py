@@ -19,8 +19,7 @@ for x in str:
     if x == l:
         print(i)
         break
-
-if i == len(str):
+else:
     print("The letter is not in the string.")
 
 

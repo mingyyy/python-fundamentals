@@ -13,29 +13,47 @@ c2 = len(i2)
 c3 = len(i3)
 
 # compare the number of characters
+if c1 == c2 == c3:
+    print("They have the same number of character.")
+elif c1 > c2 >= c3 or c1 > c3 >= c2:
+    print(i1)
+elif c2 > c1 >= c3 or c2 > c3 >= c1:
+    print(i2)
+elif c3 > c1 >= c2 or c3 > c2 >= c1:
+    print(i3)
+elif c1 == c2 > c3:
+    print(i1, i2)
+elif c1 == c3 > c2:
+    print(i1, i3)
+elif c2 == c3 > c1:
+    print(i2, i3)
+else:
+    print("Something is wrong...")
 
-if c1 == c2:
-    if c1 == c3: # c1 = c2 = c3
-        print("They have the same number of character.")
-        print(i1, i2, i3)
-    elif c3 > c1: # c3 > 1 = c2
-        print(i3)
-    else: # c3 < c1 = c2
-        print(i1, i2)
-elif c1 < c2:
-    if c2 == c3: # c1 < c2 = c3
-        print(i2, i3)
-    elif c2 < c3: # c1 < c2 < c3
-        print(i3)
-    else: # c1 < c2 > c3
-        print(i2)
-else: # c1 > c2
-    if c1 == c3: # c1 = c3 > c2
-        print(i1, i3)
-    elif c1 < c3: # c2 < c1 < c3
-        print(i3)
-    else: # c2 < c1 >c3
-        print(i1)
+
+
+#if c1 == c2:
+#    if c1 == c3: # c1 = c2 = c3
+#        print("They have the same number of character.")
+#        print(i1, i2, i3)
+#    elif c3 > c1: # c3 > 1 = c2
+#        print(i3)
+#    else: # c3 < c1 = c2
+#        print(i1, i2)
+#elif c1 < c2:
+#    if c2 == c3: # c1 < c2 = c3
+#        print(i2, i3)
+#    elif c2 < c3: # c1 < c2 < c3
+#        print(i3)
+#    else: # c1 < c2 > c3
+#        print(i2)
+#else: # c1 > c2
+#    if c1 == c3: # c1 = c3 > c2
+#        print(i1, i3)
+#    elif c1 < c3: # c2 < c1 < c3
+#        print(i3)
+#    else: # c2 < c1 >c3
+#        print(i1)
 
 
 
