@@ -8,3 +8,14 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+ls = ""
+level = 0
+for i in range(5):
+    ls += "\n"
+    for j in range(10):
+        ls += str(j + level * 10)
+        ls += " "
+    level += 1
+
+print(ls)
+
