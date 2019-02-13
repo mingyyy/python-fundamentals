@@ -9,3 +9,40 @@ folder name with a bigger folder. This program should work for any specified fol
 
 
 '''
+
+
+path = "/Users/Ming/documents/omneia"
+
+from os import walk
+
+f = []
+d = []
+JPGs = []
+for (dirpath, dirnames, filenames) in walk(path):
+    f.extend(filenames)
+
+for file in f:
+    extension = file[-3:]
+    d.append(extension)
+
+#print(set(d))
+
+lists = [[] for _ in range(len(set(d)))]
+i = 0
+
+for ex in set(d):
+    n = 0
+    for file in f:
+        if file.endswith(ex) is True:
+            lists[i].append(path + "/" + file)
+            n += 1
+    i += 1
+    print(f"There are {n} .{ex} files.")
+
+for i in range(len(set(d))):
+    print(lists[i])
+
+
+
+
+
