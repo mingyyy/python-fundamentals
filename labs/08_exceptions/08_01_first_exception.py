@@ -8,3 +8,11 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+
+
+try:
+    list_ = ["hello world!"]
+    print(list_[10])
+
+except Exception as ex:
+    print("Please check your code:",  ex)
